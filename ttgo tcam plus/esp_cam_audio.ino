@@ -10,8 +10,8 @@
 
 TFT_eSPI   tft = TFT_eSPI();
 
-const char* WIFI_SSID = "Cylo";
-const char* WIFI_PASS = "cyliaaaaa";
+const char* WIFI_SSID = "SSID";
+const char* WIFI_PASS = "PASSWORD";
 int value = 0;
 
 int incomingByte;
@@ -137,7 +137,11 @@ void  setup(){
 void loop()
 {
   server.handleClient();
-   /*if (Serial.available() > 0) {
+   /*
+
+   IGNORE THIS
+   
+   if (Serial.available() > 0) {
     // read the oldest byte in the serial buffer:
     incomingByte = Serial.read();
     // if it's a capital H (ASCII 72), turn on the LED:
